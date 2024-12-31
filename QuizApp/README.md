@@ -20,7 +20,7 @@ A feature-rich *Quiz Application* built using the MERN (MongoDB, Express, React,
 
 ## Project Flow Diagram
 
-![Project Flow Diagram](https://ibb.co/zNq0HMG)
+![Project Flow Diagram](https://github.com/Vinay-014/QuizForge/blob/master/project%20flow%20diagram.jpg?raw=true)
 
 ---
 
