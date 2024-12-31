@@ -20,7 +20,7 @@ A feature-rich *Quiz Application* built using the MERN (MongoDB, Express, React,
 
 ## Project Flow Diagram
 
-![Project Flow Diagram](path_to_your_diagram_image)
+![Project Flow Diagram](https://ibb.co/zNq0HMG)
 
 ---
 
