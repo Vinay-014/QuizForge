@@ -1,28 +1,43 @@
+# Quiz Application
 
-# Quiz-Application
-Quiz-Application Using MERN Stack Technology: In this project there are two portals one for admin and one for user <br><b>Admin:</b> admin can create quiz , add question to the quiz , modify the quiz , modify the answers or questions and can view reports of all users <br><b>User:</b> user can login and attempt the quiz and view the result and find the answers of all the question  quiz completion
-##How to run this 
-#
-## Installation
+A feature-rich *Quiz Application* built using the MERN (MongoDB, Express, React, Node.js) stack with *Redux* for state management. The application supports both *Admin* and *User* functionalities, offering a robust platform for creating and attempting quizzes.
 
-```bash
-# Make sure you have your own url for mongodb cluster add it in the .env file to store data in your databases for Ex-
-mongodb+srv://<Name>:<Password>@cluster0.4u4rtje.mongodb.net/
+---
 
-# Install dependencies for server in the root directory
-npm install
-# and run the server
-npm start
+## Features
 
-# open the another terminal and go to the client directory and install the dependencies for client
-cd .\client\
-npm install
-# after installation run the client
-npm start
+### Admin Portal
+- Create, update, and delete quizzes.
+- Add and manage quiz questions.
+- View user reports and analyze results.
 
+### User Portal
+- Register and log in to the application.
+- Attempt quizzes and view results in real-time.
+- Review answers after completing quizzes.
 
-# Server runs on  http://localhost:3000
-```
+---
 
+## Project Flow Diagram
 
+![Project Flow Diagram](path_to_your_diagram_image)
 
+---
+
+## Technology Stack
+
+- *Frontend*: React, Redux, Ant Design
+- *Backend*: Node.js, Express.js
+- *Database*: MongoDB
+- *State Management*: Redux
+- *API*: RESTful API
+- *Authentication*: JWT (JSON Web Tokens)
+
+---
+
+## Installation and Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/QuizForge.git
+   cd QuizForge
