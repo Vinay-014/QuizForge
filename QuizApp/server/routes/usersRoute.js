@@ -5,7 +5,6 @@ const jwt = require("jsonwebtoken");
 const authMiddleware = require("../middlewares/authMiddleware");
 
 // user registration
-
 router.post("/register", async (req, res) => {
   try {
     // check if user already exists
@@ -38,7 +37,6 @@ router.post("/register", async (req, res) => {
 });
 
 // user login
-
 router.post("/login", async (req, res) => {
   try {
     // check if user exists
@@ -79,10 +77,9 @@ router.post("/login", async (req, res) => {
 });
 
 // get user info
-
 router.post("/get-user-info", authMiddleware, async (req, res) => {
   try {
-    const user = await User.findById(req.body.userId);
+    const user = await User.findById(req.userId);  // Changed to req.userId
     res.send({
       message: "User info fetched successfully",
       success: true,

@@ -15,18 +15,23 @@ const resportsRoute = require("./routes/reportsRoute");
 app.use("/api/users", usersRoute);
 app.use("/api/exams", examsRoute);
 app.use("/api/reports", resportsRoute);
-const port = process.env.PORT || 5000;
 
 const path = require("path");
 __dirname = path.resolve();
 
+// Serve static files in production
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "client" , "build")));
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-  });   
-} 
+    app.use(express.static(path.join(__dirname, "client", "build")));
+    app.get("*", (req, res) => {
+        res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+    });
+}
 
-app.listen(port, () => {
-  console.log(`Server listening on port ${port}`);
+// Default route for root
+app.get("/", (req, res) => {
+  res.send("Server is running. Welcome to the QuizApp backend!");
 });
+
+
+// Export the express app as a Vercel function
+module.exports = app;
